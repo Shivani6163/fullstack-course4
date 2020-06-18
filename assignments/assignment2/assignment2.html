@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width,  initial-scale-=1">
+	<title>ASSIGNMENT 2</title>
+	<style type="text/css">
+		/* base style */
+#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+
+
+
+		* {
+			box-sizing: border-box;
+		}
+		h1 {
+			margin-bottom: 15px;
+		}
+		p {
+			border: 1px solid black;
+			background-color: #A52A2A;
+			width: 90%;
+			height: 150px;
+			margin-right: auto;
+			margin-left: auto;
+			font-family: helvetica;
+			color: white;
+		}
+		
+		.row {
+			width: 100%;
+			height: 100%
+		}
+		/* large device only */
+		@media (min-width: 1200px){
+			.col-lg-1, .col-lg-2, .col-lg-3{
+				float: left;;
+				border: 1px solid green;
+			}
+			.col-lg-1 {
+				width: 33.33%;
+				
+			}
+			.col-lg-2 {
+				width: 33.33%;
+			}
+			.col-lg-3 {
+				width: 33.33%;
+				
+			}
+			
+		}
+	
+			
+	</style>
+</head>
+<body>
+		<div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+		</form>
+	<div class="tfclear"></div>
+	</div>
+	<h1 align="center"><b>OUR MENU</b> </h1>
+	<div class="row">
+		<div class="col-lg-3 "><p><b>ITEM 1</b><br><br>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p></div>
+		<div class="col-lg-3 "><p><b>ITEM 2</b><br><br>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.</p></div>
+		<div class="col-lg-3 "><p><b>ITEM 3</b><br><br>Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word. </p></div>
+			</div>
+</body>
+</html>
